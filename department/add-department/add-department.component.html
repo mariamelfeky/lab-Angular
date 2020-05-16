@@ -1,0 +1,23 @@
+<div class="form-horizontal" >
+    <div class="form-group">
+      <label for="my-input">Id</label>
+      <div class="col-sm-5">
+          <input class="form-control" hidden type="text"[(ngModel)]="dept.id" />
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="my-input">Name</label>
+      <div class="col-sm-5">
+          <input class="form-control" type="text" [(ngModel)]="dept.deptName"/>
+
+      </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-5">
+          <button class="btn btn-success" (click)="onAdd()">Save</button>
+        </div>
+     
+    </div> 
+  </div>
+  

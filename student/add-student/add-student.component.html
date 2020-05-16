@@ -1,0 +1,28 @@
+
+<div class="form-horizontal">
+    <div class="form-group">
+      <label for="my-input">Id</label>
+      <div class="col-sm-5">
+          <input class="form-control" type="text" [(ngModel)]="std.id"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="my-input">Name</label>
+      <div class="col-sm-5">
+          <input class="form-control" type="text" [(ngModel)]="std.name"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="my-input">Age</label>
+      <div class="col-sm-5">
+          <input class="form-control" type="text" [(ngModel)]="std.age"/>
+      </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-5">
+          <button class="btn btn-primary" (click)="onAdd()">Add</button>
+        </div>
+     
+    </div> 
+  </div>
+  

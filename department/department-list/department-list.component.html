@@ -1,0 +1,32 @@
+<button class="btn btn-primary" (click)= "showAdd()">Add Department</button>
+<table class="table">
+    <thead> 
+        <tr>
+            <td>#</td>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Edit</td>
+            <td>Delete</td>
+            
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of depts;let i = index">
+            <td>{{i}}</td>
+            <td>{{item.id}}</td>
+            <td>{{item.deptName}}</td>
+            <td>
+                <button class="btn btn-success" (click)="onEdit(item.id)">Edit</button>
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="onDelete(i)">Delete</button>
+            </td>
+            
+            
+        </tr>
+    </tbody>
+    <app-add-department *ngIf="ComponentToShow == 2"></app-add-department>
+    <app-department-edit [dept]="deptEdit" *ngIf="ComponentToShow == 1"></app-department-edit>
+
+</table>
